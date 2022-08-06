@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <!--Linking all the files-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+</head>
+
+<body style="background-color: rgb(204, 199, 199)">
+    <div>
+        <center>
+            <h1>Collage Web App</h1>
+            <hr style="width: 70%; font-weight: bolder">
+            <p style="font-size: 20px">Click allow when popup appears, after you've spoken a command</p>
+            <p style="font-size: 25px; font-weight: bolder">Say "selfie" to take selfies and make a collage</p> <br>
+            <textarea id="text_box"></textarea> <br> <br>
+            <button id="start_button" onclick="start_selfie()" class="btn btn-primary" style="width: 20%">Start</button> <br>
+            <h4>Press the start button</h4>
+            <label>Your webcam: </label> <br> <br>
+            <div id="camera" style="height: 500px; width: 400px; border: solid black 2px"></div>
+            <label>Your selfie will display here: </label>
+            
+            <div id="result_show">
+                <div id="result1"><img style="width:30%; margin: 15px; box-shadow: 10px 10px 20px rgb(88, 88, 88)" src="Camera1.jpg"></div>
+                <div id="result2"><img style="width:30%; margin: 15px; box-shadow: 10px 10px 20px rgb(88, 88, 88)" src="https://www.krugerpark.co.za/images/black-maned-lion-shem-compion-786x500.jpg"></div>
+                <div id="result3"><img style="width:30%; margin: 15px; box-shadow: 10px 10px 20px rgb(88, 88, 88)" src="https://files.worldwildlife.org/wwfcmsprod/images/Lion_WWFGIFTS_cover_2020/magazine_small/2wafu1bmcz_b21fc8e6.jpeg"></div>
+            </div>
+        </center>
+    </div>
+    <div id="footer_division" style="text-align: center; background-color: lightgray; margin-top: 5px">Atulit Jain</div>
+    <script src="main.js"></script>
+</body>
+
+</html>
